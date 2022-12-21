@@ -5,7 +5,7 @@
 # - 0,56 -> 11
 
 def summa(num):
-    return sum(map(int, num.replace('.','')).replace('-',''))
+    return sum(map(int, num.replace('.','').replace('-','')))
 
 num = input('input a number: ')
 print(f'sum digits in number: {summa(num)}')
